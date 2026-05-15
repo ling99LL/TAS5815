@@ -175,7 +175,7 @@ STM32F411作为系统核心，负责所有外设的控制和数据流管理。�
 - USART2 (PA2/PA3)：调试串口输出
 - SWD接口 (PA13/PA14)：JLink调试和程序下载
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/e09e44ac14744a5b947f1d949209b092.png)
+![image.png](./images/stm32f411.png)
 #### 功放芯片：**TAS5815**
 
 TAS5815是Texas Instruments的高性能D类数字功放芯片，具有立体声PWM输出和内置音频DSP。芯片集成四个主要构建块：
@@ -188,7 +188,7 @@ TAS5815是Texas Instruments的高性能D类数字功放芯片，具有立体声P
 TAS5815需要双电源供电：DVDD为低压数字电路供电，PVDD为音频放大器输出级供电。内部LDO将PVDD转换为5V，为GVDD和AVDD供电。芯片通过I2C接口接收STM32的控制指令，支持音量调节、增益设置等功能。
 
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/c330169cc4654ecd92149b3e6e8ee2d1.png)
+![image.png](./images/tas5815.png)
 #### 蓝牙模块：**QCC3034**
 
 QCC3034是诚至微的蓝牙音频模块，负责蓝牙音频接收和解码。模块特性包括：
@@ -199,12 +199,12 @@ QCC3034是诚至微的蓝牙音频模块，负责蓝牙音频接收和解码。�
 - USB检测，高电平有效，设置为外部中断
 - 蓝牙使能启动引脚
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/0359c825efe94434b84f5026bf6209a8.png)
+![image.png](./images/qcc3034.png)
 #### 显示屏：SSD1315
 
 采用0.96寸OLED显示屏（鱼鹰光电），分辨率128×64，用于显示系统状态、音量、电压等信息。显示屏通过I2C3接口连接，地址0x3C，使用双缓冲机制优化显示性能。主循环中持续刷新屏幕，显示当前菜单状态和设置信息。{【淘宝】7天无理由退货 https://e.tb.cn/h.R0M8DvC6IydRS92?tk=btbH5r19XRu MF168 「拷贝链接」点击链接直接打开 或者 淘宝搜索直接打开}
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/1ed9c2cf5dcc41549b097aa6bea8a7ad.png)
+![image.png](./images/ssd1315.png)
 #### 存储芯片：AT24C02
 
 AT24C02是2KB容量的EEPROM存储芯片，用于持久化系统设置。通过I2C3接口连接，地址0x50。存储布局包括：
@@ -222,7 +222,7 @@ AT24C02是2KB容量的EEPROM存储芯片，用于持久化系统设置。通过I
 
 XL7005A是高压降压模块，输入电压范围宽，输出稳定5V为系统供电。模块配合PD诱骗器使用，根据TAS5815的工作需求动态调整输入电压。
 
-![image.png](https://image.lceda.cn/oshwhub/pullImage/a1082356aca14f94aa4f0bc8587a5bcf.png)
+![image.png](./images/xl7005a.png)
 #### PD诱骗器：CH224K
 
 CH224K是USB-PD协议诱骗芯片，用于从支持PD协议的充电器获取所需电压。控制引脚配置：
@@ -284,19 +284,19 @@ AT24C02 EEPROM用于存储所有菜单设置，每个设置占用2字节（1字�
 
 ### 5.1 成品展示（未盖上盖）
 
-![1](https://image.lceda.cn/oshwhub/pullImage/7dc34dd9e5b24d1a8f85d5e5d2f85c9b.jpg)
+![1](./images/product1.jpg)
 
 
-![2](https://image.lceda.cn/oshwhub/pullImage/d5ce0baa78fd4edea3f5f380abb6f730.jpg)
+![2](./images/product2.jpg)
 
-![3](https://image.lceda.cn/oshwhub/pullImage/035413cee1834807bb4ac3ea66ccd1b8.jpg)
+![3](./images/product3.jpg)
 
 ### 5.2 板子实物
 
 
-![e6acf3374c094db6ee858d9c2f7d6202.jpg](https://image.lceda.cn/oshwhub/pullImage/094a2897e5d243b29205a8750e4ba8ca.jpg)
+![e6acf3374c094db6ee858d9c2f7d6202.jpg](./images/board1.jpg)
 
-![07026f69722a88f7f08035d6ef4a977d.jpg](https://image.lceda.cn/oshwhub/pullImage/353d8b33d3224351801fcce0ce675de5.jpg)
+![07026f69722a88f7f08035d6ef4a977d.jpg](./images/board2.jpg)
 
 
 
