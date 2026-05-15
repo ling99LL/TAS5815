@@ -317,16 +317,6 @@ AT24C02 EEPROM用于存储所有菜单设置，每个设置占用2字节（1字�
 
 ---
 
-## 7. 资料汇总
-
-
-
-**GitHub代码仓库**：[https://github.com/](https://github.com/)
-
-**Bilibili项目演示视频**：[https://www.bilibili.com/](https://www.bilibili.com/)
-
-**立创铝壳开源链接**：[https://www.szlcsc.com](https://www.szlcsc.com)
-
 
 
 
