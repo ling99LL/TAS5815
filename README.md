@@ -318,7 +318,7 @@ AT24C02 EEPROM用于存储所有菜单设置，每个设置占用2字节（1字�
 ---
 
 
-
+**立创硬件开源链接**：[ https://oshwhub.com/zcjnice/class-d-bluetooth-digital-power-]( https://oshwhub.com/zcjnice/class-d-bluetooth-digital-power-)
 
 
 
